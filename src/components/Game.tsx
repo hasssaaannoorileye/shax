@@ -1,4 +1,4 @@
-"\"use client"
+"use client"
 
 import { useState, useEffect, useCallback } from "react"
 import type { Board, Position, GameMode } from "@/types/types"

@@ -256,4 +256,3 @@ const GameSettings: React.FC<GameSettingsProps> = ({
 }
 
 export default GameSettings
-

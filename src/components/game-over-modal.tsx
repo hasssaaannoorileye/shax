@@ -22,7 +22,7 @@ const GameOverModal: React.FC<GameOverModalProps> = ({ winner, onRestart, onSett
       exit={{ opacity: 0 }}
     >
       <motion.div
-        className="bg-card rounded-lg shadow-xl max-w-md w-full p-6 bg-amber-100"
+        className="bg-card rounded-lg shadow-xl max-w-md w-full p-6"
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
         transition={{ type: "spring", damping: 15 }}

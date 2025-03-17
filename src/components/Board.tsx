@@ -50,8 +50,8 @@ const BoardComponent: React.FC<BoardProps> = ({
                   ${cell === 0
                     ? "bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600"
                     : cell === 1
-                    ? "bg-black hover:bg-gray-900"
-                    : "bg-white hover:bg-gray-100"
+                      ? "bg-black hover:bg-gray-900"
+                      : "bg-white hover:bg-gray-100"
                   }
                   ${isSelected ? "ring-2 ring-blue-500 dark:ring-blue-400 z-10" : ""}
                   ${isValidMoveOrigin ? "ring-2 ring-yellow-400 dark:ring-yellow-300" : ""}
