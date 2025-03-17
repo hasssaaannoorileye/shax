@@ -615,7 +615,7 @@ const Game = () => {
         if ((rowDiff === 2 && colDiff === 0) || (rowDiff === 0 && colDiff === 2)) {
           const midRow = (fromRow + row) / 2
           const midCol = (fromCol + col) / 2
-          const capturedPiece = newBoard[midRow][midCol]
+          // const capturedPiece = newBoard[midRow][midCol]
           newBoard[midRow][midCol] = 0
           captured = true
 
@@ -627,7 +627,7 @@ const Game = () => {
 
           // Update player stats
           setPlayers((prev) =>
-            prev.map((player, index) =>
+            prev.map((player) =>
               player.id === currentPlayer ? updatePlayerStats(player, moveTime, true) : player,
             ),
           )
@@ -641,7 +641,7 @@ const Game = () => {
         } else {
           // Update player stats for regular move
           setPlayers((prev) =>
-            prev.map((player, index) =>
+            prev.map((player) =>
               player.id === currentPlayer ? updatePlayerStats(player, moveTime, false) : player,
             ),
           )
